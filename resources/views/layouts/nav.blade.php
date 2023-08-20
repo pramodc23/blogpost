@@ -16,7 +16,7 @@
 								<li class="active"><a href="{{ url('/') }}">Home</a></li>
 								
 								@if(Auth::user())
-								<li><a href="{{ url('/myblog') }}">My Blogs</a></li>
+								<li><a href="{{ url('blogs') }}">My Blogs</a></li>
 								@endif
 
                                 @guest

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,14 @@ use App\Http\Controllers\DashboardController;
 Route::get('/',[DashboardController::class,'index'] );
 Route::get('/userlogin',[DashboardController::class,'login'] );
 Route::get('/userregister',[DashboardController::class,'register'] );
-Route::get('/myblog',[DashboardController::class,'myblog'] );
+// Route::get('/myblog',[DashboardController::class,'myblog'] );
+Route::get('/addblog',[DashboardController::class,'addblog'] );
+Route::get('/createblog',[BlogController::class,'createblog'] );
+
+Route::post('/insertblog', [DashboardController::class,'insertblog']);
+
+Route::resource('blogs', BlogController::class);
+
 
 Auth::routes();
 
