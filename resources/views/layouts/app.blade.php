@@ -25,12 +25,12 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-	<link rel="stylesheet" href="{{ mix('css/tiny-slider.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}">
 
-<link rel="stylesheet" href="{{ mix('css/aos.css') }}">
-<link rel="stylesheet" href="{{ mix('css/glightbox.min.css') }}">
-<link rel="stylesheet" href="{{ mix('css/style.css') }}">
-<link rel="stylesheet" href="{{ mix('css/flatpickr.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/aos.css') }}">
+<link rel="stylesheet" href="{{ asset('css/glightbox.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/flatpickr.min.css') }}">
 
 
 

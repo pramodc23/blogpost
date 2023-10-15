@@ -15,11 +15,11 @@
 		<div class="container">
 			<div class="row">				
 				<div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
-					<form method="POST" action="{{ route('blogs.store') }}">
+					<form method="POST" action="">
 						@csrf
 						<div class="row">
 							<div class="col-6 mb-3">
-                                <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ $blogs->name }}" required autocomplete="title" autofocus placeholder="Title">
+                                <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="" required autocomplete="title" autofocus placeholder="Title">
                                 @error('title')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

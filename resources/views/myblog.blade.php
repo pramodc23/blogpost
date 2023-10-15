@@ -23,7 +23,7 @@
                 <img src="images/img_1_sq.jpg" alt="Image" class="img-fluid">
               </a>
               <div>
-                <span class="date"> {{ $blog->created_at->format('M j, Y') }}  <a href="{{ url('/blogs').'/'.$blog->id.'/edit' }}" class="btn btn-secondary ">Edit</a> </span>
+                <span class="date"> {{ $blog->created_at->format('M j, Y') }}  <a href="{{ url('/editblog').'/'.$blog->id }}" class="btn btn-secondary ">Edit</a> </span>
                 <h2><a href="single.html">{{ $blog->name }}</a></h2>
                 <p>{{ $blog->description }}</p>                
               </div>

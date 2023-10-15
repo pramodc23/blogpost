@@ -50,10 +50,10 @@ class BlogController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
-    {
+    public function editblog( $id)
+    {  
         $blogs = Blog::where('id',$id)->first();
-        return view('addblog',compact('blogs'));
+        return view('editblog');
     }
 
     /**

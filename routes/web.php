@@ -21,6 +21,7 @@ Route::get('/userregister',[DashboardController::class,'register'] );
 // Route::get('/myblog',[DashboardController::class,'myblog'] );
 Route::get('/addblog',[DashboardController::class,'addblog'] );
 Route::get('/createblog',[BlogController::class,'createblog'] );
+Route::get('/editblog/{id}',[BlogController::class,'editblog'] );
 
 Route::post('/insertblog', [DashboardController::class,'insertblog']);
 
